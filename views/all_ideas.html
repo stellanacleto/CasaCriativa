@@ -1,0 +1,22 @@
+<!-- Para percorrer o array de ideas e puchar os elementos
+Para objeto idea dentro de ideas-->
+{% for idea in ideas %}
+
+    <div class="idea">
+        <img src="{{idea.img}}" 
+        alt="Imagem de {{idea.title}}">
+                     
+            <div class="content">
+                <h3>{{idea.title}}</h3>
+                <p>{{idea.category}}</p>
+                <div class="description">
+                    {{idea.description}}
+                </div>
+                <div>
+                    <a href="{{idea.url}}" target="_blank">Ir para a ideia</a>
+                </div>
+     
+            </div>
+    </div>
+     
+{% endfor %}
